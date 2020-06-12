@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>parallax</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font: 400 15px/1.8 "Lato", sans-serif;
+        color: #777;
+      }
+
+      /* .bgimg-1,
+      .bgimg-2,
+      .bgimg-3,{
+        position: relative;
+        /* width: 1450px; */
+        opacity: 0.85;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+      } */
+      .bgimg-1 {
+        background-image: url("./images/pic7.jpg");
+
+        min-height: 100%;
+      }
+
+      .bgimg-2 {
+        background-image: url("./images/pic6.jpg");
+
+        min-height: 400px;
+      }
+
+      .bgimg-3 {
+        background-image: url("./images/pic5.jpg");
+        min-height: 400px;
+      }
+      /* .bgimg-4 {
+        background-image: url("./images/pic8.jpg");
+
+        min-height: 400px;
+      }
+
+      .bgimg-5 {
+        background-image: url("./images/pic2.jpg");
+        min-height: 400px;
+      }
+      .bgimg-6 {
+        background-image: url("./images/pic4.jpg");
+
+        min-height: 400px;
+      }
+
+      .bgimg-7 {
+        background-image: url("./images/pic9.jpg");
+        min-height: 400px;
+      } */
+
+      .caption {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+      }
+
+      .caption span.border {
+        background-color: #111;
+        color: #fff;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+      }
+
+      h3 {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font: 20px "Lato", sans-serif;
+        color: #111;
+      }
+
+      /* Turn off parallax scrolling for tablets and phones */
+      @media only screen and (max-device-width: 1024px) {
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+          background-attachment: scroll;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bgimg-1">
+      <div class="caption">
+        <span class="border"> GREAT COSMOS</span>
+      </div>
+    </div>
+
+    <div
+      style="
+        color: #777;
+        background-color: white;
+        text-align: center;
+        padding: 50px 80px;
+        text-align: justify;
+      "
+    >
+      <h3 style="text-align: center;">Parallax Demo</h3>
+      <p>
+        <b>
+          Understanding the origin and nature of the universe has been a goal of
+          humans since they first lifted their eyes to the night sky. In the
+          past decade, results that should help us to answers these questions
+          have been pouring in, as cosmology has turned from a theoretical field
+          to an experimental science.</b
+        ><br />
+
+        Since its redesign last month, New Scientist has been making the last 12
+        months’ articles free for everyone to read. Here, in case you missed
+        them, are our top 10 in-depth articles on cosmology
+
+        <br /><b> Why Einstein was wrong about relativity </b>
+
+        Einstein built his theory of special relativity on the notion that light
+        always travels at the same speed, no matter whether the observer is
+        standing still or bowling along at warp speed. However, a growing group
+        of physicists now think Einstein got it wrong.
+
+        <br /><b> The void: Imprint of another universe?</b>
+
+        There is a hole in the universe: a vast void where there are far fewer
+        stars and galaxies than elsewhere. What’s it doing there? One suggestion
+        is that it is the first evidence of another universe, a claim that would
+        also vindicate string theory: our best hope for describing the universe
+        at its smallest scale.
+
+        <br /><b>The hunt for the Un-universe</b>
+
+        Delve deep enough into the farthest reaches of what’s called quantum
+        field theory and strange things pop out. They’ve been called
+        “unparticles” and represent an entirely new type of stuff that could
+        make dark matter instantly obsolete. If they exist, we may also be
+        completely surrounded by them.
+
+        <b>2008: Does time travel start here?</b>
+
+        Once it is back up and running, the giant particle accelerator called
+        the Large Hadron Collider should give us an idea of what went on in the
+        first moments after the birth of the universe. It might also generate
+        another, even bigger surprise: it may be the landing place for the
+        world’s first time travellers.
+
+        <b>Is dark matter mystery about to be solved?</b>
+
+        A large chunk of our universe – about 22% of it – may be about to be
+        discovered. This stuff is called dark matter and however hard we have
+        looked for it, we cannot find it. A new set of experiments may be about
+        to change all that…
+
+        <b> Dark energy may just be a cosmic illusion</b>
+
+        A decade ago, astronomers made a discovery that has created the most
+        troubling problem in astrophysics. They found that the universe is
+        expanding with ever-increasing speed, a trend blamed on a hypothetical
+        force called dark energy. The nature of dark energy is proving to be
+        such a tough nut to crack that some researchers now wonder if it is an
+        illusion.
+
+        <b> Black holes may lurk in unexpected places</b>
+
+        The notion that a black hole could lurk inside a giant star goes against
+        everything we think we know about these monstrous objects. Yet if it is
+        correct, it could solve one of the biggest mysteries in the cosmos.
+
+        <br />
+        <b>Inflation deflated: the big bang’s toughest test</b>
+
+        In the first moments after its birth, the universe blew up like a
+        balloon. That’s according to the theory of inflation, which nicely
+        papers over some big cracks in modern cosmological thinking. However,
+        recent observations of remnant signals from the big bang seem to
+        undermine the notion of inflation.
+
+        <br /><b>Lithium: The hole in the big bang theory</b>
+
+        Most of the lithium on Earth is thought to have been created in the
+        primordial fusion factory that powered up when the universe was barely a
+        second old. There’s a problem with this idea, however: the amount of
+        lithium we can find is way off the mark. Does this mean that our ideas
+        about the origin of the universe are wrong?
+
+        <br /><b> Awaiting a messenger from the multiverseb</b>
+
+        In recent years the idea has taken root that our universe is part of a
+        much larger “multiverse”. It sounds like wild speculation. Yet if the
+        Large Hadron Collider finds a particular type of gluino, a hypothetical
+        subatomic particle, the idea will gain added credibility. Stranger
+        still, the gluino could appear after the LHC is turned off. Read more:
+        https://www.newscientist.com/article/dn16231-cosmology-top-10-articles-from-2008/#ixzz6P2VXFeMP
+      </p>
+
+      <div class="bgimg-2">
+        <div class="caption">
+          <span
+            class="border"
+            style="
+              background-color: transparent;
+              font-size: 25px;
+              color: #f7f7f7;
+            "
+            >BEAUTIFUL EARTH</span
+          >
+        </div>
+      </div>
+
+      <div style="position: relative;">
+        <div
+          style="
+            color: #ddd;
+            background-color: #282e34;
+            text-align: center;
+            padding: 50px 80px;
+            text-align: justify;
+          "
+        >
+          <p>
+            Scroll up and down to really get the feeling of how Parallax
+            Scrolling works.
+          </p>
+        </div>
+      </div>
+
+      <div class="bgimg-3">
+        <!-- <div class="caption">
+   <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+   </div> -->
+      </div>
+
+      <div style="position: relative;">
+        <div
+          style="
+            color: #ddd;
+            background-color: #282e34;
+            text-align: center;
+            padding: 50px 80px;
+            text-align: justify;
+          "
+        >
+          <p>
+            Scroll up and down to really get the feeling of how Parallax
+            Scrolling works.
+          </p>
+        </div>
+      </div>
+
+      <!-- <div class="bgimg-4">
+         <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"></span>
+  </div> 
+      </div>
+
+      <div style="position: relative;">
+        <div
+          style="
+            color: #ddd;
+            background-color: #282e34;
+            text-align: center;
+            padding: 50px 80px;
+            text-align: justify;
+          "
+        >
+          <p>
+            Scroll up and down to really get the feeling of how Parallax
+            Scrolling works.
+          </p>
+        </div>
+      </div>
+
+      <div class="bgimg-5">
+        <!-- <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"></span>
+  </div> 
+      </div>
+
+      <div style="position: relative;">
+        <div
+          style="
+            color: #ddd;
+            background-color: #282e34;
+            text-align: center;
+            padding: 50px 80px;
+            text-align: justify;
+          "
+        >
+          <p>
+            Scroll up and down to really get the feeling of how Parallax
+            Scrolling works.
+          </p>
+        </div>
+      </div>
+
+      <div class="bgimg-6">
+         <div class="caption">
+ <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"></span>
+ </div> 
+      </div>
+
+      <div style="position: relative;">
+        <div
+          style="
+            color: #ddd;
+            background-color: #282e34;
+            text-align: center;
+            padding: 50px 80px;
+            text-align: justify;
+          "
+        >
+          <p>
+            Scroll up and down to really get the feeling of how Parallax
+            Scrolling works.
+          </p>
+        </div>
+      </div>
+
+      <div class="bgimg-7">
+        < <div class="caption">
+ </div> 
+      </div>
+
+      <div style="position: relative;">
+        <div
+          style="
+            color: #ddd;
+            background-color: #282e34;
+            text-align: center;
+            padding: 50px 80px;
+            text-align: justify;
+          "
+        >
+          <p>
+            Scroll up and down to really get the feeling of how Parallax
+            Scrolling works.
+          </p>
+        </div>
+      </div> -->
+      <div class="bgimg-1">
+        <div class="caption">
+        <span class="border">COOL!</span>
+        </div>
+      </div>
+    
+  </body>
+</html>
